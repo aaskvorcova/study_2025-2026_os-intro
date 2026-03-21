@@ -1,7 +1,3 @@
-project:
-  title: "presentation"
-  output-dir: "_output"
-
 standalone: true
 self-contained: true
 slide-level: 2
@@ -10,8 +6,12 @@ crossref:
   lof-title: Список иллюстраций
   lot-title: Список таблиц
   lol-title: Листинги
-format: # Formats
+format:
   beamer: # Pdf output format
+    pdf-engine: lualatex
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
     toc: true
     toc-title: Содержание
     number-sections: false
@@ -28,11 +28,3 @@ format: # Formats
       - file: _resources/tex/beamer.tex
     babel-lang: russian
     babel-otherlangs: english
-  revealjs: # Html output
-    transition: slide
-    margin: 0.2
-    smaller: true
-    slide-number: true
-    output-ext: html
-    theme: beige
-    logo: _resources/image/logo_rudn.png
